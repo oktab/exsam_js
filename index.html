@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.14/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-700">
+    <header class="w-[100%] mx-auto">
+        <img src="./MOVIES!.png" class="mx-auto">
+        <nav class="w-[1296px] h-[46px] flex gap-[10px] item-center mx-auto my-[30px] items-center">
+            <input id="searchInput" type="text" class="w-[209px] h-[36px] rounded-[6px] text-[black]"
+                placeholder="search your mov">
+            <div class="w-[209px] h-[36px] rounded-[6px] text-[black] bg-[white]  content-center">ALL</div>
+            <details class="dropdown">
+                <summary class="btn m-1">Sort</summary>
+                <ul class="menu dropdown-content bg-base-100 rounded-box z-[1] w-52 p-2 shadow">
+                    <li id="sort_a_b"><a>A-B</a></li>
+                    <li id="sort_b_a"><a>B-A</a></li>
+                </ul>
+            </details>
+            <button class="w-[209px] h-[36px] rounded-[6px] bg-[#198754] text-[#FFFFFF]" id="btn">Search</button>
+        </nav>
+
+    </header>
+    <div class="flex flex-wrap gap-[10px] w-[1296px] mx-auto" id="row">
+
+    </div>
+    <script type="module" src="main.js"></script>
+    <script type="module" src="./movies.js"></script>
+</body>
+</html>
